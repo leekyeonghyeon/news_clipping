@@ -1,0 +1,40 @@
+#title{
+    display: inline-flex;
+    gap: 0.32em;
+    font-family: var(--font-code);
+    font-size: 2.8em;
+    font-weight: bold;
+    color: black;
+  }
+
+@keyframes blink {
+    from { opacity: 0; }
+    to { opacity: 5; }
+}
+
+#title {
+    animation-name: blink;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.title_sub {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto
+}
+
+.news_title > div {
+    gap: 0.32em;
+    font-family: var(--font-code);
+    font-size: 2.8em;
+    font-weight: bold;
+    color: black;
+}
+
+.news_title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 33px;
+}

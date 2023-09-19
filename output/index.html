@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./fetch.js" defer></script>
+    <title>뉴스 클리핑</title>
+</head>
+<body>
+    <div id="flex" width="100%">
+        <section id="title">
+            <div class="title_sub"><span aria-hidden="true">뉴스클리핑</span></div>
+            <div class="title_sub">모아보기</div>
+        </section>
+        <section id="filtered_bar_section">
+            <div>
+                <input id="filtered_bar" type="search" placeholder="추천 검색어 : '공격', '개인정보', '취약', '정보보안'// 검색 후 기사 제목 클릭" size="140" news_search>
+            </div>
+        </section>
+        <section id="news_content">
+
+            <div class="news">
+                <div id="boan_news">
+                    <div class="news_title">
+                        <span class="news_name">보안 뉴스</span>
+                    </div>
+                    <div class="boan_searched_news" boan_article_container></div>
+                </div>
+            </div>
+
+            <div class="news">
+                <div id="daily_secu_news" dailysecu_article_container>
+                    <div class="news_title">
+                        <span class="news_name">데일리 시큐</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news">
+                <div id="newsis_news" newsis_article_container>
+                    <div class="news_title">
+                        <span class="news_name">뉴시스</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news">
+                <div id="money_today_news" money_today_article_container>
+                    <div class="news_title">
+                        <span class="news_name">머니 투데이</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news">
+                <div id="i_news" i_news_article_container>
+                    <div class="news_title">
+                        <span class="news_name">아이뉴스 24</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news">
+                <div id="etnews" etnews_article_container>
+                    <div class="news_title">
+                        <span class="news_name">전자신문</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <template mk_article_title_content_span>
+        <div class="article">
+            <div class="article_title">
+                <a article_href target="_blank">
+                    <span class="article_title_span" article_title_text></span>    
+                </a>
+            </div>
+            <div class="article_content">
+                <a article_href>
+                    <span class="article_content_span" article_content_text></span>    
+                </a>
+            </div>
+        </div>
+    </template>
+</body>
+</html>

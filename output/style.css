@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+@import url('/style/intro.css');
+@import url('/style/search_bar.css');
+@import url('/style/article.css');
+
+/*리셋 구간*/
+
+:root {
+    --font-code: 'Nanum Gothic Coding', monospace;;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    min-height: 150vh;
+    min-width: 100vh;
+    background-color: peachpuff;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+/*리셋 끝*/
+
+/*구조 시작*/
+#flex{
+    display: flex;
+    flex-direction: column;
+}
+
+#news_content{
+    background-color: peachpuff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+    margin-top: 1rem;
+}
+
+.news{
+    display: flex;
+    flex-direction: column;
+}
+/*구조 끝*/

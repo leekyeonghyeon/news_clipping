@@ -1,0 +1,11 @@
+#filtered_bar_section{
+    height: 35px;
+    font-family: var(--font-code);
+}
+
+#filtered_bar{
+    font-size: 35px;
+    height: 50px;
+    font-family: var(--font-code);
+    background-color: ivory;
+}
